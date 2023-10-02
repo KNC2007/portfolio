@@ -30,6 +30,7 @@ main aside {
     padding: 2%;
     margin: 2%;
     height:fit-content;
+    box-shadow: gray 5px 5px 5px;
 }
 
 
@@ -41,7 +42,6 @@ main aside {
     align-items: center;
     width: 100%;
     margin-top: 2%;
-    
 }
 
 .card {
@@ -49,8 +49,9 @@ main aside {
     background-color: white;
     padding: 2%;
     margin-bottom:3%;
+    box-shadow: gray 5px 5px 5px;
+    width: 100%;
 }
-
 
 main nav {
     font-size: 64px;
@@ -60,6 +61,8 @@ main nav {
     padding: 0%, 3%;
     align-items: top;
     margin-right: 2%;  
+    position: relative;
+    cursor: grab;
 }
 
 summary p {
@@ -93,62 +96,114 @@ aside img {
     margin: 1%; 
 }
 
-/* tooltip for navigation icons */
-.tooltip-me .tooltiptext::after {
-    content: "About Me";
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent black transparent;
+footer {
+    text-align: right;
+    margin-bottom: 2%;
+    margin-right: 2%;
+    font-size: 12px;
 }
 
-/* .sample {
+/* tooltips for navigation icons */
+span {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+}
+
+.tooltip-me:hover::after {
+    content: "About Me";
+    position: absolute;
+    bottom: -10px;
+    left: 10px;
+    padding: 1px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    font-size: small;
+    width: 100%;
+}    
+
+.tooltip-works:hover::after {
+    content: "Works";
+    position: absolute;
+    bottom: -15px;
+    left: 20px;
+    padding: 5px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    font-size: small;
+}
+
+.tooltip-contact:hover::after {
+    content: "Contact Me";
+    position: absolute;
+    bottom: -15px;
+    left: 10px;
+    padding: 5px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    font-size: small;
+    width: 100%;
+}
+
+#works {
+    width: 100%;
+    margin-top: 2%;
+}
+
+article div {
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 2%;
-  
-} */
-
-#works {
-    display: inline-block;
     flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-items: flex-start;
 }
 
-#contact {
-    width: 100%
+#first-app {
+    align-self: stretch;
+    width: 100%;
+    background-color: #40607C;
 }
+
+#second-app { 
+    max-width: 200px;
+}
+
+#third-app {
+    max-width: 200px;
+ }
 
 .sample {
-    flex: 1 0 0;
-    padding: 10px;
-    margin: 10px;
+    /* flex: 1 0 0; */
+    padding: 5px;
+    margin: 5px;
     text-align: center;
     border-style: solid;
     border-width: 1px;
-    max-width: 200px;
     flex-wrap: wrap;
-  }
-  
-  .sample header {
+}
+
+.sample header {
     padding: 20px;
+    width: 100%;
     background:#DAC1AC;
     color:black;
-  }
-  
-  .sample img {
+}
+
+.sample img {
     width: 100%;
     max-width: 400px;
     max-height: 400px;
-    flex-direction: row;
-  }
-  
-  
+}
+
+#contact {
+    width: 100%;
+}
+
 
 /* MEDIA QUERY SECTION  */
 
