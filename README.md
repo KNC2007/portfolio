@@ -6,7 +6,7 @@ This portfolio website is for Courtney Kalbach. There is one section on the righ
 
 ## Screenshot
 The following images demonstrate the web application's appearance and functionality:
-![Portfolio website screenshot number 1 displaying the top of the website.](../portfolio/assets/images/portfolio%20screenshot%201.png)
+![Portfolio website screenshot number 1 displaying the top of the website.](./assets/images/portfolio%20screenshot%201.png)
 
 ![Portfolio website screenshot number 2 displaying the middle and footer parts of the website.](./assets/images/portfolio%20screenshot%202.png)
 
